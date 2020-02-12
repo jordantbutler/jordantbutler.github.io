@@ -10,9 +10,6 @@ document.addEventListener('dragstart', function(event) {
 
 document.addEventListener('touchstart', function(event) {
   draggedItem = event.target;
-  console.log(draggedItem.children)
-  event.dataTransfer.setData('text/plain', null);
-  event.dataTransfer.setDragImage(self.draggedItem.children[0],0,0);
 });
 
 document.addEventListener('dragover', function(event) {
